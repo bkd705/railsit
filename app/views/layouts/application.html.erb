@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <div class="ui inverted verticle masthead center aligned segment">
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <%= link_to "Home", root_path, class: 'item' %>
+          <div class="right item">
+            <%= link_to "Submit Link", new_link_path, class: 'small ui inverted green button' %>
+          </div>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,20 @@
+<%= form_for :link, url: links_path, :html => { :class => 'ui form' } do |f| %>
+  <h4 class="ui dividing header">Link</h4>
+  <div class="two fields">
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title, placeholder: 'Link Title' %>
+    </div>
+    <div class="field">
+      <%= f.label :link %>
+      <%= f.text_field :link, placeholder: 'Link' %>
+    </div>
+  </div>
+  
+  <h4 class="ui dividing header">Link Description</h4>
+  <div class="field">
+    <%= f.text_area :description %>
+  </div>
+
+  <%= f.submit 'Submit Link', :class => 'small ui inverted green button' %>
+<% end %>
